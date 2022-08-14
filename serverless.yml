@@ -14,7 +14,7 @@ custom:
 plugins:
   - serverless-iam-roles-per-function
 functionss:
-  getPost:
+  getPostById:
     handler: app.getPostById
     name: get-post
     memorySize: 128 # mb
