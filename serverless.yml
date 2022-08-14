@@ -42,7 +42,7 @@ functions:
       - Effect: "Allow"
         Action:
           - "dynamodb:PutItem"
-          Resource: !GetAtt PostsTable.Arn
+        Resource: !GetAtt PostsTable.Arn
   updatePost:
     handler: app.updatePost
     name: update-post
