@@ -10,10 +10,9 @@ provider:
 
 custom:
   postsTableName: posts-table-${self:provider.stage}
-
+  
 plugins:
   - serverless-iam-roles-per-function
-
 functionss:
   getPost:
     handler: app.getPostById
