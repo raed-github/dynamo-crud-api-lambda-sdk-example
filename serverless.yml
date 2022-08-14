@@ -14,9 +14,9 @@ custom:
 plugins:
   - serverless-iam-roles-per-function
 
-functions:
+functionss:
   getPost:
-    handler: app.getPost
+    handler: app.getPostById
     name: get-post
     memorySize: 128 # mb
     timeout: 5 # seconds
@@ -85,7 +85,6 @@ functions:
         Action:
           - "dynamodb:Scan"
         Resource: !GetAtt PostsTable.Arn
-
 resources:
   Resources:
     PostsTable:
