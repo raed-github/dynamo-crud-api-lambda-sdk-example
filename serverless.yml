@@ -1,5 +1,4 @@
 service: dynamo-crud-api-lambda-sdk-example
-frameworkVersion: '3'
 
 provider:
   name: aws
